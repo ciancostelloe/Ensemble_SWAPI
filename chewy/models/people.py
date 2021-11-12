@@ -2,10 +2,7 @@ from django.db import models
 from .my_datetime import DateTimeModel
 from .planet import Planet
 
-
 class People(DateTimeModel):
-    """ A Person """
-
     name = models.CharField(max_length=100)
     height = models.CharField(max_length=10, blank=True)
     mass = models.CharField(max_length=10, blank=True)

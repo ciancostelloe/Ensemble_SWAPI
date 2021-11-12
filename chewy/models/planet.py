@@ -3,8 +3,6 @@ from .my_datetime import DateTimeModel
 
 
 class Planet(DateTimeModel):
-    """ A Star Wars Planet """
-
     name = models.CharField(max_length=100)
     rotation_period = models.CharField(max_length=40)
     orbital_period = models.CharField(max_length=40)

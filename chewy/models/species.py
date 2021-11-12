@@ -3,10 +3,7 @@ from .my_datetime import DateTimeModel
 from .planet import Planet
 from .people import People
 
-
 class Species(DateTimeModel):
-    "A species is a type of alien or person"
-
     name = models.CharField(max_length=40)
     classification = models.CharField(max_length=40)
     designation = models.CharField(max_length=40)

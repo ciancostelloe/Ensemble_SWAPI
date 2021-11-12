@@ -35,7 +35,7 @@ IGNORE = {
     Film: ["created", "edited"],
 }
 
-BASEURL = "https://swapi.co/api/"
+BASEURL = "https://swapi.dev/api/"
 
 
 def _query(model: str) -> str:
