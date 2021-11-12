@@ -10,3 +10,5 @@ Steps to get application working:
 2. Git clone this repo.
 3. Run pip install -r requirements.txt 
 4. Run python manage.py runserver
+
+![Alt text](Screenshot.png?raw=true "Film List")
