@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+List of films
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div id="films" class="list-group borderless overflow-auto">
+            {% for f in films %}
+                <a href="{% url 'film' id=f.id %}" class="list-group-item list-group-item-action">
+                <h2>{{ f.title }} </h2>
+                {{ f.release_date}}
+                </a>
+            {% empty %}
+                <div id="film" align="center">
+                    <h1> No Results </h1>
+                </div>
+            {% endfor %} 
+        </div>
+    </div>
+{% endblock %}

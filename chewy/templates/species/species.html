@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+Species
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div id="films" class="list-group borderless overflow-auto">
+        {% for f in species %}
+            <a href="/species/{{ f.id }}" class="list-group-item list-group-item-action">
+            <h2>{{ f.name }} </h2>
+            </a>
+        {% endfor %}    
+    </div>
+</div>
+    
+{% endblock %}
