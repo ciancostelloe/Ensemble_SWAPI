@@ -1,9 +1,7 @@
 from django.views.generic.base import View
 from django.shortcuts import render
-
 from chewy.models.film import Film
 from django.db.models import Count
-
 
 class IndexTemplateView(View):
     def get(self, request):

@@ -20,13 +20,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "zj!haeyk++c@ub$!2s^k=c5*#4e@i0^p4bdcq&s!o-l!g2jywe"
+#SECRET_KEY = os.environ.get('SECRET_KEY') used for production
+SECRET_KEY = 'exhlfdat&vfum(-34*c2uroi(($ww(yo$9pv98=e6p^gl(-eoj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+#Heroku for future use
 
 # Application definition
 
@@ -79,12 +80,6 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-        # "ENGINE": "django.db.backends.postgresql",
-        # "NAME": "swdb",
-        # "HOST": "localhost",
-        # "PORT": os.getenv("PORT"),
-        # "USER": "postgres",
-        # "PASSWORD": os.getenv("PASS"),
     }
 }
 

@@ -27,12 +27,12 @@ RELATED = {
 }
 
 IGNORE = {
-    Planet: ["created", "edited", "residents", "films"],
-    Starship: ["created", "edited", "films"],
-    Vehicle: ["created", "edited", "films"],
-    People: ["created", "edited", "films", "species", "vehicles", "starships"],
-    Species: ["created", "edited", "films"],
-    Film: ["created", "edited"],
+    Planet: ["residents", "films"],
+    Starship: ["films"],
+    Vehicle: ["films"],
+    People: ["films", "species", "vehicles", "starships"],
+    Species: ["films"],
+    Film: [],
 }
 
 BASEURL = "https://swapi.dev/api/"

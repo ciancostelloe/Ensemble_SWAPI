@@ -18,7 +18,6 @@ from django.urls import include, path
 from django.contrib.auth.views import LoginView
 from chewy.views.adminView import adminView, logoutView, loadData
 
-
 urlpatterns = [
     path("", include("chewy.urls")),
     path("login/", LoginView.as_view(redirect_authenticated_user=True), name="login"),

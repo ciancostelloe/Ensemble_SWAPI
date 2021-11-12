@@ -19,7 +19,6 @@ MODELS = {
     "Films": Film.objects.count(),
 }
 
-
 class adminView(LoginRequiredMixin, View):
     login_url = "/login/"
 

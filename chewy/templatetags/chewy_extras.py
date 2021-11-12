@@ -18,7 +18,7 @@ MODELS = {
     "films": Film,
 }
 
-
+#Search Films using filter method as seen in SWAPI dev documentation
 @register.filter
 def get_name(path):
     p_split = path.split("/")
