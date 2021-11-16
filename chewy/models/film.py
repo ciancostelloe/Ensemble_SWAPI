@@ -12,7 +12,7 @@ class Film(DateTimeModel):
     title = models.CharField(max_length=100)
     episode_id = models.IntegerField()
     opening_crawl = models.TextField(max_length=1000)
-    director = models.CharField(max_length=100)
+    #director = models.CharField(max_length=100)
     producer = models.CharField(max_length=100)
     release_date = models.DateField()
     characters = models.ManyToManyField(People, related_name="films", blank=True)
